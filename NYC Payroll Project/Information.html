@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Payroll Information</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+   
+   <nav class="container">
+      <a href="index.html">Payroll</a>
+      <a href="Information.html">Information</a>
+      <a href="Analysis.html">Analysis</a>
+    </nav>
+
+  <body onload="init()">
+    <div id="banner" class="container center">
+      <div style="text-align:center">
+          <h1>NYC Open Data</h1>
+          <h2>Filtering Payroll</h2>
+      </div>
+    </div>
+
+    <div class="container subbanner">
+      <div>
+        <p>This practical challenges students to provide various ways to filter Payroll retrieved from NYC Open Data.</p>
+        <a class="button" href="https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data</a> 
+        <a class="button" target="_blank" href="https://data.cityofnewyork.us/City-Government/Citywide-Payroll-Data-Fiscal-Year-/k397-673e/about_data"
+"> Payroll data</a>
+        <a class="button" target="_blank" href="https://jsoneditoronline.org/"> JSON Editor Online</a>
+       </div>
+    </div>
+
+    <div class="container">
+      <div id="leftPanel">
+        <div class="card">
+          <h3>SEARCH By Information</h3>
+          <input type="text" id="basesalary" placeholder="Enter base salary(all numbers)">
+          <input type="button" value ="Search" onclick="filterBybase_salary()"> 
+          <br>
+          <input type="text" id="agencyname" placeholder="Enter agency name">
+          <input type="button" value="Search" onclick="filterByagency_name()">
+          <br>
+          <input type="text" id="titledescription" placeholder="Enter title description">
+          <input type="button" value="Search" onclick="filterBytitle_description()">
+          <br>
+          <input type="text" id="fiscalyear" placeholder="Enter fiscal year">
+          <input type="button" value="Search" onclick="filterByfiscal_year()">
+          <br>
+          <input type="text" id="totalotherpay" placeholder="Enter total other pay">
+          <input type="button" value="Search" onclick="filterBytotal_other_pay()">
+        </div>
+
+
+
+      </div>
+
+      <div class="card" id="rightPanel">
+        <h1>Payroll </h1>
+        <div id="result" class="container"></div>
+        <div id="output" class="container"></div>
+      </div>
+      
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Payroll Information</h3>
+    </div>  
+  </body>
+</html>

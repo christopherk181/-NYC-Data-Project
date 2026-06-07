@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Payroll Analysis</title>
+ 
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="c3.css" rel="stylesheet" type="text/css" />
+    <script src="c3.js"></script>
+    <script src="d3.js"></script>
+    <script src="helper.js"></script>  
+    <script src="script.js"></script>
+   </head>
+
+   <nav class="container">
+      <a href="index.html">Payroll</a>
+      <a href="Information.html">Information</a>
+      <a href="Analysis.html">Analysis</a>
+    </nav>
+  
+  <body onload="init()">
+    <div id="banner" class="container center">
+      <h1> Charts: Citywide Payroll Data </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p> <a href="Citywide Payroll Data (Fiscal Year)" target="_blank"> Citywide Payroll Datas </a> dataset from NYC Open Data. Students take the information and use the <a href="https://c3js.org/">c3.js</a> JavaScript library to visualize the results as a chart.</p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        
+        <div class="card">
+          <h3>Select Chart Type</h3>
+          <select id="chartType" style="width:100px;">
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+          </select>
+        </div>
+        
+        <div class="card">
+          <h3>Placeholder</h3>
+          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by borough and create a chart to analyze the results.</p>
+          <a class="button" onclick="accidentsByBorough()"> Show Chart </a>
+        </div>
+        
+        <div class="card">
+          <h3>palceholdere</h3>
+          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by vehicle type and create a chart to analyze the results.</p>
+          <a class="button" onclick="accidentsByVehicle()"> Show Chart </a>
+        </div>
+      </div>
+      
+      <div class="card">
+       <div id="chart"></div> <!-- div for chart -->
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Payroll Analysis</h3>
+    </div>  
+  </body>
+</html> 
