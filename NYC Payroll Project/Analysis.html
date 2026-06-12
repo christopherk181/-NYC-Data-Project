@@ -20,13 +20,13 @@
       <a href="Analysis.html">Analysis</a>
     </nav>
   
-  <body onload="init()">
+  <body onload="initB()">
     <div id="banner" class="container center">
       <h1> Charts: Citywide Payroll Data </h1>
     </div>
     <div class="container subbanner">
       <div>
-        <p> <a href="Citywide Payroll Data (Fiscal Year)" target="_blank"> Citywide Payroll Datas </a> dataset from NYC Open Data. Students take the information and use the <a href="https://c3js.org/">c3.js</a> JavaScript library to visualize the results as a chart.</p>
+        <p>Bar and Pie chart of Payroll.</p>
        </div>
     </div>
     <div class="container">
@@ -42,19 +42,12 @@
         
         <div class="card">
           <h3>Placeholder</h3>
-          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by borough and create a chart to analyze the results.</p>
-          <a class="button" onclick="accidentsByBorough()"> Show Chart </a>
+          <p><span class="highlight">Scenario:</span>  aggregate the number of people by borough.</p>
+          <a class="button" onclick="payrollByBorough()"> Show Chart </a>
         </div>
-        
-        <div class="card">
-          <h3>palceholdere</h3>
-          <p><span class="highlight">Scenario:</span> Aggregate the number of accidents by vehicle type and create a chart to analyze the results.</p>
-          <a class="button" onclick="accidentsByVehicle()"> Show Chart </a>
-        </div>
-      </div>
       
       <div class="card">
-       <div id="chart"></div> <!-- div for chart -->
+       <div id="chart"></div> 
       </div>
     </div>
 

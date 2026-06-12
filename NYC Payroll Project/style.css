@@ -1,6 +1,8 @@
 html,body{
   margin:0 auto;
   font-family:Arial;
+  color:slategray;
+  background-color: navy;
 }
 .container{
   display:flex;
@@ -11,28 +13,30 @@ html,body{
   align-items:center;
 }
 
+
+
+
 nav{
-  background-color:cornflowerblue;
+  background-color:rgb(28, 100, 233);
 }
 nav a{
-  color:black;
+  color:rgb(94, 27, 218);
   padding:10px;
   flex:1;
   text-decoration:none;
   text-align:center;
 }
 nav a:hover{
-  color:white;
+  color:rgb(10, 211, 53);
 }
-.subbanner{
-  background-color:rgb(200,225,255);
-}
+
+
 #banner{
   background-color:blue;
   color:white;
 }
 #footer{
-  background-color:cornflowerblue;
+  background-color:rgb(182, 100, 237);
   color:white;
   /*position:fixed;*/
   left: 0;
@@ -46,7 +50,12 @@ nav a:hover{
   padding:10px;
   border:1px solid gray;
   text-align:center;
+  color:slategray;
+  background-color:rgb(80, 200, 120)
 }
+
+
+
 
 .highlight{
   font-style:italic;
@@ -74,10 +83,8 @@ nav a:hover{
 }
 .card img{
   height:100px;
+ 
 }
 #output{
   flex-wrap:wrap;
-}
-.card2 img{
-  height:100px;
 }
